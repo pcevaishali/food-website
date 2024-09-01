@@ -24,7 +24,6 @@ const RestrauntCard = ({
         </div>
         <h2 className="justify-center m-1">•</h2>
         <h4 className="heading text-sm justify-center text-black font-bold m-1.5"> {costForTwo ?? '₹200 for two'}</h4>
-        {/* // <h4>{lastMileTravelString} minutes</h4> */}
       </span>
     </div>
 
@@ -34,4 +33,3 @@ const RestrauntCard = ({
 export default RestrauntCard;
 
 
-//w-60  m-6 p-20 border-r-6 inline-grid hover:scale-110 transition duration-500 align-baseline shadow

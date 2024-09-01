@@ -32,8 +32,8 @@ import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestrauntMenu";
 import Cart from "./components/Cart";
 import { Profiler } from "react";
-
-
+import {Provider} from "react-redux";
+import store from "./utils/store"
 const About = lazy(() => import("./components/About"));
 //const Instamart = lazy(() => import("./components/Instamart"))
 
@@ -44,7 +44,7 @@ function onRender(id, phase, actualDuration, baseDuration, startTime, commitTime
 const AppLayout = () => {
   return (
 
-    <>
+    <Provider store= {store}>
       <Profiler id="Sidebar" onRender={onRender}>
         <Header />
       </Profiler>
@@ -55,7 +55,7 @@ const AppLayout = () => {
         <Footer />
       </Profiler>
 
-    </>
+    </Provider>
 
   );
 };

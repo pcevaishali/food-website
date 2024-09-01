@@ -82,7 +82,7 @@ const Body = () => {
         >Search</button>
       </div>
 
-      <div className="resturant-list flex flex-wrap">
+      <div className="resturant-list flex flex-wrap justify-center">
         {(filterdRestaurant?.length === 0 ? <h1>No data match your filter</h1> :
           filterdRestaurant?.map((restaurant) => {
             return (

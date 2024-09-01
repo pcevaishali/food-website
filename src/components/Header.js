@@ -4,7 +4,7 @@ import logo from "../assets/foodie.jpg";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 import React from "react";
-
+import { useSelector } from "react-redux";
 
 const Title = () => {
     return (
@@ -22,8 +22,8 @@ const Header = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(true);
 
     const isOnline = useOnline();
-
-
+     const cartItems=useSelector(store=>store.cart.items);
+ // console.log(cartItems);
     return (
         <div className="flex justify-between bg-pink-400 shadow-lg ">
             <Title />
@@ -41,7 +41,8 @@ const Header = () => {
                     <li className="px-2 hover:text-white hover:text-m rounded-md">
                         <Link to="/cart">Cart</Link>
                     </li>
-
+                    <li>{cartItems.length? cartItems.length : " "}</li>
+                      
                 </ul>
                 <div className="grid  justify-items-start">
                     <ul className="status px-1" >
