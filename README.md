@@ -5,13 +5,7 @@
 - I made [🚀 foodie-apps 😍](https://foodie-apps.netlify.app//) from scratch using React.js and Parcel.js, which is the part of this course.
 
 
-## To Clone this Repository
 
-You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
-
-```bash
-  git clone "https://github.com/RohitSharma50/food-orderinf-website"
-```
 
 Go to the project directory
 
